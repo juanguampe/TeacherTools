@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Tools Portal</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="San Bartolome La Merced" class="school-logo">
+            <span>Teacher Tools Portal</span>
+        </div>
+        <div class="auth-placeholder">
+            <i class="fas fa-user-circle"></i>
+            <span>Sign In</span>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="tools/assessment.html" class="nav-link">Assessment Tools</a></li>
+            <li class="nav-item"><a href="tools/planning.html" class="nav-link">Planning Tools</a></li>
+            <li class="nav-item"><a href="tools/resources.html" class="nav-link">Resources</a></li>
+            <li class="nav-item"><a href="tools/administrative.html" class="nav-link">Administrative</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h1>Welcome to the Teacher Tools Portal</h1>
+            <p>This portal provides quick access to various tools and resources to help streamline your teaching process. Explore the tools below or navigate through the categories in the menu above.</p>
+        </section>
+        
+        <!-- Category Filters -->
+        <div class="filters mb-3">
+            <a href="index.html" class="tool-card-action filter-button active" data-category="all" onclick="toggleCategory('all')">All Tools</a>
+            <a href="tools/assessment.html" class="tool-card-action filter-button" data-category="category-assessment" onclick="toggleCategory('category-assessment')">Assessment</a>
+            <a href="tools/planning.html" class="tool-card-action filter-button" data-category="category-planning" onclick="toggleCategory('category-planning')">Planning</a>
+            <a href="tools/resources.html" class="tool-card-action filter-button" data-category="category-resources" onclick="toggleCategory('category-resources')">Resources</a>
+            <a href="tools/administrative.html" class="tool-card-action filter-button" data-category="category-administrative" onclick="toggleCategory('category-administrative')">Administrative</a>
+        </div>
+        
+        <!-- Assessment Tools Section -->
+        <section id="category-assessment" class="category">
+            <h2 class="tools-heading">
+                <span class="category-marker category-assessment"></span>
+                Assessment Tools
+            </h2>
+            <div class="tools-grid">
+                <!-- Assessment Tool 1 -->
+                <div class="tool-card">
+                    <div class="tool-card-header">Grade Calculator</div>
+                    <div class="tool-card-body">
+                        <div class="placeholder-content placeholder-assessment">
+                            <i class="fas fa-calculator fa-2x"></i>
+                        </div>
+                        <p class="tool-card-description">
+                            Quickly calculate student grades with customizable weighting and grading scales.
+                        </p>
+                        <a href="#" class="tool-card-action">Launch Tool</a>
+                    </div>
+                </div>
+                
+                <!-- Assessment Tool 2 -->
+                <div class="tool-card">
+                    <div class="tool-card-header">Quiz Generator</div>
+                    <div class="tool-card-body">
+                        <div class="placeholder-content placeholder-assessment">
+                            <i class="fas fa-question-circle fa-2x"></i>
+                        </div>
+                        <p class="tool-card-description">
+                            Generate quizzes from your question banks with options for various question types.
+                        </p>
+                        <a href="#" class="tool-card-action">Launch Tool</a>
+                    </div>
+                </div>
+                
+                <!-- Assessment Tool 3 -->
+                <div class="tool-card">
+                    <div class="tool-card-header">Rubric Builder</div>
+                    <div class="tool-card-body">
+                        <div class="placeholder-content placeholder-assessment">
+                            <i class="fas fa-table fa-2x"></i>
+                        </div>
+                        <p class="tool-card-description">
+                            Create and customize assessment rubrics for different types of assignments.
+                        </p>
+                        <a href="#" class="tool-card-action">Launch Tool</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Planning Tools Section -->
+        <section id="category-planning" class="category">
+            <h2 class="tools-heading">
+                <span class="category-marker category-planning"></span>
+                Planning Tools
+            </h2>
+            <div class="tools-grid">
+                <!-- Planning Tool 1 -->
+                <div class="tool-card">
+                    <div class="tool-card-header">Lesson Planner</div>
+                    <div class="tool-card-body">
+                        <div class="placeholder-content placeholder-planning">
+                            <i class="fas fa-calendar-alt fa-2x"></i>
+                        </div>
+                        <p class="tool-card-description">
+                            Create and organize lesson plans with templates and objectives tracking.
+                        </p>
+                        <a href="#" class="tool-card-action">Launch Tool</a>
+                    </div>
+                </div>
+                
+                <!-- Planning Tool 2 -->
+                <div class="tool-card">
+                    <div class="tool-card-header">Curriculum Mapper</div>
+                    <div class="tool-card-body">
+                        <div class="placeholder-content placeholder-planning">
+                            <i class="fas fa-project-diagram fa-2x"></i>
+                        </div>
+                        <p class="tool-card-description">
+                            Map your curriculum across weeks and months to ensure proper coverage of standards.
+                        </p>
+                        <a href="#" class="tool-card-action">Launch Tool</a>
+                    </div>
+                </div>
+                
+                <!-- Planning Tool 3 -->
+                <div class="tool-card">
+                    <div class="tool-card-header">Activity Generator</div>
+                    <div class="tool-card-body">
+                        <div class="placeholder-content placeholder-planning">
+                            <i class="fas fa-lightbulb fa-2x"></i>
+                        </div>
+                        <p class="tool-card-description">
+                            Get ideas for engaging classroom activities based on subject and grade level.
+                        </p>
+                        <a href="#" class="tool-card-action">Launch Tool</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Resources Section -->
+        <section id="category-resources" class="category">
+            <h2 class="tools-heading">
+                <span class="category-marker category-resources"></span>
+                Resources
+            </h2>
+            <div class="tools-grid">
+                <!-- Resource 1 -->
+                <div class="tool-card">
+                    <div class="tool-card-header">Worksheet Creator</div>
+                    <div class="tool-card-body">
+                        <div class="placeholder-content placeholder-resources">
+                            <i class="fas fa-file-alt fa-2x"></i>
+                        </div>
+                        <p class="tool-card-description">
+                            Generate custom worksheets for various subjects with different difficulty levels.
+                        </p>
+                        <a href="#" class="tool-card-action">Launch Tool</a>
+                    </div>
+                </div>
+                
+                <!-- Resource 2 -->
+                <div class="tool-card">
+                    <div class="tool-card-header">Organiza Seminarios</div>
+                    <div class="tool-card-body">
+                        <div class="placeholder-content placeholder-resources">
+                            <i class="fas fa-users fa-2x"></i>
+                        </div>
+                        <p class="tool-card-description">
+                            Distribuye estudiantes en grupos de seminario evitando conflictos de horario.
+                        </p>
+                        <a href="https://student-distribution-tool-v2-qlhrbpgeyaxhumjz8iufdt.streamlit.app/" class="tool-card-action" target="_blank">Launch Tool</a>
+                    </div>
+                </div>
+                
+                <!-- Resource 3 -->
+                <div class="tool-card">
+                    <div class="tool-card-header">Presentation Templates</div>
+                    <div class="tool-card-body">
+                        <div class="placeholder-content placeholder-resources">
+                            <i class="fas fa-desktop fa-2x"></i>
+                        </div>
+                        <p class="tool-card-description">
+                            Browse and customize presentation templates for classroom instruction.
+                        </p>
+                        <a href="#" class="tool-card-action">Launch Tool</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Administrative Tools Section -->
+        <section id="category-administrative" class="category">
+            <h2 class="tools-heading">
+                <span class="category-marker category-administrative"></span>
+                Administrative Tools
+            </h2>
+            <div class="tools-grid">
+                <!-- Admin Tool 1 -->
+                <div class="tool-card">
+                    <div class="tool-card-header">Attendance Tracker</div>
+                    <div class="tool-card-body">
+                        <div class="placeholder-content placeholder-administrative">
+                            <i class="fas fa-clipboard-check fa-2x"></i>
+                        </div>
+                        <p class="tool-card-description">
+                            Track and manage student attendance with detailed reporting options.
+                        </p>
+                        <a href="#" class="tool-card-action">Launch Tool</a>
+                    </div>
+                </div>
+                
+                <!-- Admin Tool 2 -->
+                <div class="tool-card">
+                    <div class="tool-card-header">Parent Communication</div>
+                    <div class="tool-card-body">
+                        <div class="placeholder-content placeholder-administrative">
+                            <i class="fas fa-envelope fa-2x"></i>
+                        </div>
+                        <p class="tool-card-description">
+                            Generate and send customized communications to parents and guardians.
+                        </p>
+                        <a href="#" class="tool-card-action">Launch Tool</a>
+                    </div>
+                </div>
+                
+                <!-- Admin Tool 3 -->
+                <div class="tool-card">
+                    <div class="tool-card-header">Student Progress Reports</div>
+                    <div class="tool-card-body">
+                        <div class="placeholder-content placeholder-administrative">
+                            <i class="fas fa-chart-line fa-2x"></i>
+                        </div>
+                        <p class="tool-card-description">
+                            Create detailed progress reports for individual students or classes.
+                        </p>
+                        <a href="#" class="tool-card-action">Launch Tool</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="footer-links">
+            <li><a href="#" class="footer-link">Help</a></li>
+            <li><a href="#" class="footer-link">Feedback</a></li>
+            <li><a href="#" class="footer-link">Contact IT Support</a></li>
+            <li><a href="#" class="footer-link">Resources</a></li>
+        </ul>
+        <p class="footer-copyright">&copy; 2025 School Teacher Tools Portal. All rights reserved.</p>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
